@@ -17,6 +17,7 @@ struct Tensor {
         std::memcpy(shape,shape_,N*sizeof(unsigned int));
         data = new T[size];
         std::memset(data, 0, size * sizeof(T));
+        
     }
     ~Tensor() {
         delete[] data;
