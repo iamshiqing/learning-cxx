@@ -13,6 +13,7 @@ struct Tensor4D {
         data = new T[size];
         std::memcpy(shape,shape_,4*sizeof(unsigned int));
         std::memcpy(data, data_, size *sizeof(T));
+        //
     }
     ~Tensor4D() {
         delete[] data;
